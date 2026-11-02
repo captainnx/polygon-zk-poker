@@ -1,0 +1,141 @@
+{
+  "version": "engine-audit-v1",
+  "handId": "ff99c6b4e90f16e9208ef4f0fa160db419bbf52dc291bcee943115f8a1720e89",
+  "config": {
+    "stacks": [
+      1000,
+      700,
+      500,
+      1000,
+      350,
+      1000,
+      800,
+      1000,
+      600
+    ],
+    "button": 0,
+    "smallBlind": 5,
+    "bigBlind": 10,
+    "ante": 1
+  },
+  "serverCommit": "fee9d9be40515f545d44c04ba0ffa391369b3f8be7346bcf87df2f14a4322348",
+  "playerCommits": [
+    "905dccee91da04c6a92a3a611e5b717b104ca5434a6e6be4fc2749d183c2c144",
+    "2a3f81f8b484856ea081ced68505b8264618c3abdb9becb340c05b2818fe701e",
+    "2bca00d6e2d1bf4fe5da5c85d85f86c3757d55c28cc6d7bf687b4ec63efff11e",
+    "8da291dfa95ec1ff80ce3deb1276904abaf763f955374182b94c1e1a9a371793",
+    "ecae7d64d2286d4c1a9643d5ecb9b353e4bff0ef783718c6b14672f566bb6bcf",
+    "5fd3a72faa2bcbd42ecffef1601eefa949506cafd928fd5b96b404fdc3f69fae",
+    "3d32ed9893edddd8a61f7cf4d7201f55f0e7488c9098cfa0f563c8f5192a6279",
+    "0581052b2d06e3eb5617cd6460078d3d0a4201793da5584cc14b781d6e8f6cbd",
+    "50e2da651bcd7b577a98520d2dfac62e663a9f92383e94b9fa495e01059c2d7b"
+  ],
+  "deckCommit": "4e2a2489f769d96f46a0a9746a71fdb32cae9f41cc62d72d3dbfef92a2b8e8a2",
+  "serverSeed": "c7ac3d6697109b8966b053dc657a78f02239fdeff7986f84f78446c95bb61e2f",
+  "playerSeeds": [
+    "390a3b8b62fc852e1ad869d6630eca27c69176c97c23232ce85b40217be90a67",
+    "dadf4f7c2fd5272598d77ead9c467bf74e8900207bf034d83eca3047ec735092",
+    "3c9d7e6689f94150e9286aab92d481dff2342fadbf39215c8d19e6b97ff9b305",
+    "5abc1ea253b99dee68270831d4b7f2fea1ca2e91e5c61b4dc187be3fb5bdc867",
+    "b6628eac84ffe9301ff7bed5c4d25a4f076cce57fea1152a0f91d7e233e2b667",
+    "d62d64cd98ea03e74cd10b7c10aaa6a5ed3bbe33d8a03fd74aa7a6f152159b68",
+    "c947902dc8a3a9524e8a69cdc5682c8d5766492e17ed77253e5cd095d1f13405",
+    "6e7b1fd9aa33bfaeae08df2d99cdadd6eb73beafcacc48fe1c66e8be7369b6ba",
+    "80a040e709a5e5671ba50d1db61be5de1d4619bc2459ad86f57f74b022e14b20"
+  ],
+  "initialChain": "4824d0a0784e01f95d9f18f99919f966b8a8a961f99078498be4cfe92bdb29b7",
+  "records": [
+    {
+      "action": {
+        "seat": 3,
+        "kind": "all-in",
+        "amount": 0
+      },
+      "stateHash": "039a6a2960223f8a193047366ea68cacbe9bb6cc43425b0d1cfe58c3d7b0fdb3",
+      "chain": "83767aee2ec242f0a9d86ef15869aa0d2c2687bbdbdfe0a1b31efc638fb1b342"
+    },
+    {
+      "action": {
+        "seat": 4,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "351e711e48013b7c900f8d8c13127402d67508ea34d9ce1747f72c68bb73bf1f",
+      "chain": "2ed9a8c0442e7fe1aa0c748751e22fd8fd7f2ed5a5c02e2976305e5cc7e0eec6"
+    },
+    {
+      "action": {
+        "seat": 5,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "2401188840ddc6ffc5592657fb152af39149302daa9370ec3e564d1b6281cd50",
+      "chain": "757a14f1dea363ded653c749a10e5b10a98693603a05d3b8059bf7aa73b88ec9"
+    },
+    {
+      "action": {
+        "seat": 6,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "9ccf63182166d7d21a90edc23981264d2650c028d3158785c1a4e785d0a036af",
+      "chain": "6404709d0f26d4865a9f1456fb2860cb091d2e2997e35d9bd624ac2bd5a950fd"
+    },
+    {
+      "action": {
+        "seat": 7,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "c679581a4ac18258ce75919aa9cef9597647cf91ab8431bfe6fb8847c343b681",
+      "chain": "0fff597a0223958f43e07dada4329f54a602cc9e21e07eb490bbed659e5dfb01"
+    },
+    {
+      "action": {
+        "seat": 8,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "e29a52654c11a7ead2180b45808c70ef8325078faf74dd2fffcfbcc55e690bed",
+      "chain": "7ecc081f8557cd4d3c8e2a59e2bc66aed9d416d21bccf5567affd986808c76ca"
+    },
+    {
+      "action": {
+        "seat": 0,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "daab33cfff8f678e6c89af8003fe7b4318e53d16ef8e20380f52804a147167c1",
+      "chain": "db597ae5e9f323ced869aa41f06aadc9c86cda6de1c233a43498d18f246a83d6"
+    },
+    {
+      "action": {
+        "seat": 1,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "6257faceed6eb442167a474046cc7ed974e6db576d3ac6ca2316761d04acadb7",
+      "chain": "e58ffd2fa25008161f89baf02d38f6de606ef20f89722077042b33c9949f8006"
+    },
+    {
+      "action": {
+        "seat": 2,
+        "kind": "call",
+        "amount": 0
+      },
+      "stateHash": "3a1f6e3ee76d4c2bc356414bbbafe672e9267e1bcb0dde0d1b10373a40a7dc2b",
+      "chain": "a4e74710eaafc5ebca0114303d7eb48fae5c6f7500575cf3afa10217dd470626"
+    }
+  ],
+  "finalStacks": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6950,
+    0
+  ]
+}

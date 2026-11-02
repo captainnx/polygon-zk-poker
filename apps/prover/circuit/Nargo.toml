@@ -1,0 +1,8 @@
+[package]
+name = "showdown_demo"
+type = "bin"
+authors = ["Polygon ZK Poker contributors"]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+showdown = { path = "../../../circuits/showdown" }

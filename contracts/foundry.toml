@@ -1,0 +1,13 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = []
+solc = "../scripts/solc-wrapper.cjs"
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 1
+fuzz.runs = 256
+
+[rpc_endpoints]
+amoy = "${AMOY_RPC_URL}"
+polygon = "${POLYGON_RPC_URL}"

@@ -1,0 +1,66 @@
+Full verifier deployed; registry=0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0
+ Container polygon-zk-poker-server-1 Restarting 
+ Container polygon-zk-poker-server-1 Started 
+{"actions":9,"finalStacks":[6950,0,0,0,0,0,0,0,0],"handId":"0x4f0e7d79eeae5c2bf027b79eed6c3b1dc0080f50b65f237b0d6ed9c43783cf76","scope":"wallet/session signatures, frozen commitments, v2 shuffle and complete engine replay; historical publication time and availability are not proven","verified":true}
+Executing complete signed-hand witness...
+{
+  "completeWitness": true,
+  "negativeCases": [
+    "actionSignature",
+    "walletSignature",
+    "consentSignature",
+    "deck",
+    "illegalBet",
+    "playerSeed",
+    "balancedSidePotOutput"
+  ],
+  "allTamperingRejected": true,
+  "witnessMs": 21133.395541
+}
+Executing complete signed-hand witness...
+Generating complete UltraHonk ZK proof...
+Scheme is: ultra_honk, num threads: 2 (mem: 12.05 MiB)
+CircuitProve: Proving key computed in 14539 ms (mem: 8821.17 MiB)
+Public inputs saved to "/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/apps/prover/generated/hand/public_inputs" (mem: 10398.23 MiB)
+Proof saved to "/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/apps/prover/generated/hand/proof" (mem: 10398.23 MiB)
+Scheme is: ultra_honk, num threads: 2 (mem: 12.05 MiB)
+Proof verified successfully (mem: 12.05 MiB)
+Scheme is: ultra_honk, num threads: 2 (mem: 12.05 MiB)
+ZK Honk solidity verifier saved to "/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/apps/prover/generated/hand//HonkVerifier.sol" (mem: 12.05 MiB)
+{
+  "scope": "signed-hand-v2",
+  "scheme": "UltraHonk",
+  "zeroKnowledge": true,
+  "oracle": "keccak",
+  "backend": "native-cli",
+  "capacity": 64,
+  "players": 9,
+  "actions": 9,
+  "proofBytes": 11712,
+  "proverMs": 119138.041084,
+  "totalMs": 127869.448708,
+  "nodePeakRSSBytes": 1289338880,
+  "processTreePeakRSSBytes": 10797744128,
+  "sampleIntervalMs": 1000,
+  "elapsedMs": 119230,
+  "verified": true
+}
+{
+  "scope": "signed-hand-v2",
+  "chainId": 31337,
+  "verifier": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+  "registry": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+  "handId": "0x4f0e7d79eeae5c2bf027b79eed6c3b1dc0080f50b65f237b0d6ed9c43783cf76",
+  "players": 9,
+  "actions": 9,
+  "totalChips": 6950,
+  "serverRestartRecovered": true,
+  "oneHandTransaction": true,
+  "transactionHash": "0x6a1b37bf55322c8730bc89bf9d3abdb82d79924eb575967daa0d771a24d8bb3a",
+  "verifyAndRecordGas": "5058535",
+  "deploymentGas": "7654435",
+  "verifierRuntimeBytes": 24089,
+  "balancedOutputTamperRejected": true,
+  "duplicateHandRejected": true,
+  "handVerifiedEvent": true
+}

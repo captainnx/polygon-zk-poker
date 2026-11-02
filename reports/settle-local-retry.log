@@ -1,0 +1,2 @@
+{"actions":9,"finalStacks":[6950,0,0,0,0,0,0,0,0],"handId":"0x4f0e7d79eeae5c2bf027b79eed6c3b1dc0080f50b65f237b0d6ed9c43783cf76","scope":"wallet/session signatures, frozen commitments, v2 shuffle and complete engine replay; historical publication time and availability are not proven","verified":true}
+{"verified":true,"alreadyRecorded":true,"chainId":31337,"registry":"0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0","handId":"0x4f0e7d79eeae5c2bf027b79eed6c3b1dc0080f50b65f237b0d6ed9c43783cf76"}

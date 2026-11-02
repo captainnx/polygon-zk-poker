@@ -1,0 +1,10 @@
+[package]
+name = "hand"
+type = "lib"
+authors = ["Polygon ZK Poker contributors"]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+shuffle = { path = "../shuffle" }
+betting = { path = "../betting" }
+showdown = { path = "../showdown" }

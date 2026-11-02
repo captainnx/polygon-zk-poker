@@ -1,0 +1,15 @@
+{
+  "name": "@zkpoker/sdk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./v3": "./src/v3.ts",
+    "./backup": "./src/backup.ts"
+  },
+  "dependencies": {
+    "@zkpoker/protocol": "0.1.0",
+    "viem": "2.57.7"
+  }
+}

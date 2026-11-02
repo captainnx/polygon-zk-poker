@@ -1,0 +1,17 @@
+{
+  "handId": "ff99c6b4e90f16e9208ef4f0fa160db419bbf52dc291bcee943115f8a1720e89",
+  "actions": 9,
+  "chain": "a4e74710eaafc5ebca0114303d7eb48fae5c6f7500575cf3afa10217dd470626",
+  "finalStacks": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6950,
+    0
+  ],
+  "scope": "reproducible entropy and engine replay only; no signature, publication-time or ZK verification"
+}

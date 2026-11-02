@@ -1,0 +1,4 @@
+Correct session signature; Noir rejects: validSignatureIllegalCheck (check facing bet)
+Correct session signature; Noir rejects: validSignatureShortRaise (short raise must be all-in)
+Correct session signature; Noir rejects: validSignatureWrongHole (invalid signature)
+Correct session signature; Noir rejects: validSignatureWrongBoard (invalid signature)

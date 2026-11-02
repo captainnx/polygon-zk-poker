@@ -1,0 +1,7 @@
+[package]
+name = "showdown"
+type = "lib"
+authors = ["Polygon ZK Poker contributors"]
+compiler_version = ">=1.0.0"
+
+[dependencies]

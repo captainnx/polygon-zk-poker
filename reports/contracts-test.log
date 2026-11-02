@@ -1,0 +1,22 @@
+
+> polygon-zk-poker@0.1.0 test:contracts
+> cd contracts && forge test
+
+No files changed, compilation skipped
+
+Ran 12 tests for test/PokerHandRegistry.t.sol:PokerHandRegistryTest
+[PASS] testDomainBindsRegistry() (gas: 989447)
+[PASS] testFuzzConservation(uint64) (runs: 256, μ: 528659, ~: 528747)
+[PASS] testRecordsNinePlayers() (gas: 525158)
+[PASS] testRejectsAlteredStacksWithSameTotal() (gas: 158365)
+[PASS] testRejectsChipCreation() (gas: 147261)
+[PASS] testRejectsDuplicateHand() (gas: 515990)
+[PASS] testRejectsDuplicatePlayers() (gas: 118042)
+[PASS] testRejectsEOAVerifier() (gas: 36052)
+[PASS] testRejectsGhostChips() (gas: 136590)
+[PASS] testRejectsInvalidProof() (gas: 147402)
+[PASS] testRejectsPlayerSubstitution() (gas: 157341)
+[PASS] testRejectsZeroInitialStack() (gas: 134861)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 27.80ms (30.06ms CPU time)
+
+Ran 1 test suite in 39.37ms (27.80ms CPU time): 12 tests passed, 0 failed, 0 skipped (12 total tests)

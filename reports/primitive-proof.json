@@ -1,0 +1,17 @@
+{
+  "scope": "seven-card-ranking-demo-only",
+  "scheme": "UltraHonk",
+  "zeroKnowledge": true,
+  "oracle": "keccak",
+  "proofBytes": 8640,
+  "publicInputs": [
+    "0x0000000000000000000000000000000000000000000000000000000000678306"
+  ],
+  "proverMs": 5881.559499999999,
+  "totalMs": 8413.115292,
+  "nodePeakRSSBytes": 337739776,
+  "verified": true,
+  "tamperedProofRejected": true,
+  "tamperedPublicInputRejected": true,
+  "output": "/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/apps/prover/generated/"
+}

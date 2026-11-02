@@ -1,0 +1,21 @@
+
+> polygon-zk-poker@0.1.0 test
+> node --experimental-strip-types --test packages/sdk/src/*.test.ts apps/prover/src/*.test.ts
+
+✔ missing build artifacts fail closed; production status stays false (0.544916ms)
+✔ encrypted recovery backup rejects wrong password and ciphertext tampering (167.802084ms)
+✔ wallet EIP-712 authorization binds chain, registry, table, key and expiry (16.194125ms)
+✔ session signs actions and tampered hand, sequence, amount, key fail (11.70775ms)
+✔ invalid action schema fails before signing (0.242959ms)
+✔ v2 Go/Noir fixture matches every SDK action digest and session signature (42.391834ms)
+✔ v2 observation commitments cannot be substituted under a valid action signature (4.339166ms)
+✔ v2 receipt chain retains byte identity and rejects forks and payload tampering (73.735166ms)
+✔ observation signing rejects padding aliases and fractional card IDs (1.744542ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 389.285

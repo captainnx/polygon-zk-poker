@@ -1,0 +1,9 @@
+{
+  "handId": "0x33b822b7f567be3a40b2c7ed89d2917f55cb7c242fa5a1dc1872beeb6bd41c22",
+  "moves": 9,
+  "totalChips": 6950,
+  "durable": true,
+  "retriesChecked": true,
+  "recoveryChecked": true,
+  "adversarialRejected": 3
+}

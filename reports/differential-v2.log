@@ -1,0 +1,14 @@
+go run ./apps/server/cmd/engine-vectors > fixtures/engine-vectors.json
+/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/.tools/nargo compile --program-dir apps/prover/engine-diff
+node scripts/engine-diff.ts
+Go/Noir differential vectors passed: 10/40
+Go/Noir differential vectors passed: 20/40
+Go/Noir differential vectors passed: 30/40
+Go/Noir differential vectors passed: 40/40
+{
+  "cases": 40,
+  "players": "2–9",
+  "seed": 912342,
+  "checks": "blinds, ante, folds, full raises, all-in, runout, ranking, refunds, side pots and final chips",
+  "tamperedResultRejected": true
+}

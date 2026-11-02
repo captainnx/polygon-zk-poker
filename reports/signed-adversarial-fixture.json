@@ -1,0 +1,12 @@
+{
+  "validSessionSignatures": true,
+  "liveServerTest": false,
+  "serverRejectedAll": false,
+  "noirRejectedAtExpectedConstraint": true,
+  "cases": [
+    "validSignatureIllegalCheck",
+    "validSignatureShortRaise",
+    "validSignatureWrongHole",
+    "validSignatureWrongBoard"
+  ]
+}

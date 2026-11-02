@@ -1,0 +1,45 @@
+/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/.tools/nargo test --workspace --program-dir circuits
+[betting] Running 7 test functions
+[betting] Testing illegal_check ... [0m[32mok[0m
+[betting] Testing illegal_raise ... [0m[32mok[0m
+[betting] Testing no_dry_betting ... [0m[32mok[0m
+[betting] Testing short_and_cumulative ... [0m[32mok[0m
+[betting] Testing call_and_raise ... [0m[32mok[0m
+[betting] Testing short_does_not_reopen ... [0m[32mok[0m
+[betting] Testing chip_creation ... [0m[32mok[0m
+[betting] [0m[32m7 tests passed[0m
+[hand] Running 4 test functions
+[hand] Testing illegal_output ... [0m[32mok[0m
+[hand] Testing ineligible ... [0m[32mok[0m
+[hand] Testing wrong_side_pot ... [0m[32mok[0m
+[hand] Testing side_pots ... [0m[32mok[0m
+[hand] [0m[32m4 tests passed[0m
+[poker_crypto] Running 2 test functions
+[poker_crypto] Testing sha::known_vectors ... [0m[32mok[0m
+[poker_crypto] Testing sha::changed_input ... [0m[32mok[0m
+[poker_crypto] [0m[32m2 tests passed[0m
+[poker_engine] Running 3 test functions
+[poker_engine] Testing wrong_turn ... [0m[32mok[0m
+[poker_engine] Testing heads_up_call_check ... [0m[32mok[0m
+[poker_engine] Testing nine_all_in ... [0m[32mok[0m
+[poker_engine] [0m[32m3 tests passed[0m
+[showdown] Running 5 test functions
+[showdown] Testing range ... [0m[32mok[0m
+[showdown] Testing duplicates ... [0m[32mok[0m
+[showdown] Testing kickers_wheel_and_tie ... [0m[32mok[0m
+[showdown] Testing wrong_winner ... [0m[32mok[0m
+[showdown] Testing categories ... [0m[32mok[0m
+[showdown] [0m[32m5 tests passed[0m
+[shuffle] Running 5 test functions
+[shuffle] Testing duplicate ... [0m[32mok[0m
+[shuffle] Testing invalid_card ... [0m[32mok[0m
+[shuffle] Testing invalid_swap ... [0m[32mok[0m
+[shuffle] Testing wrong_order ... [0m[32mok[0m
+[shuffle] Testing valid_swaps ... [0m[32mok[0m
+[shuffle] [0m[32m5 tests passed[0m
+/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/.tools/nargo test --program-dir apps/prover/circuit
+[showdown_demo] Running 3 test functions
+[showdown_demo] Testing invalid_cards ... [0m[32mok[0m
+[showdown_demo] Testing valid ... [0m[32mok[0m
+[showdown_demo] Testing invalid_rank ... [0m[32mok[0m
+[showdown_demo] [0m[32m3 tests passed[0m

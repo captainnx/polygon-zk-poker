@@ -1,0 +1,16 @@
+
+added 76 packages, and audited 81 packages in 6s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm warn allow-scripts 6 packages have install scripts not yet covered by allowScripts:
+npm warn allow-scripts   @foundry-rs/anvil@1.7.1 (postinstall: TARGET_TOOL=anvil node ./postinstall.mjs)
+npm warn allow-scripts   @foundry-rs/cast@1.7.1 (postinstall: TARGET_TOOL=cast node ./postinstall.mjs)
+npm warn allow-scripts   @foundry-rs/forge@1.7.1 (postinstall: TARGET_TOOL=forge node ./postinstall.mjs)
+npm warn allow-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn allow-scripts   fsevents@2.3.3 (install: (install scripts present))
+npm warn allow-scripts   msgpackr-extract@3.0.4 (install: node-gyp-build-optional-packages)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.

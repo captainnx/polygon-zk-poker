@@ -1,0 +1,12 @@
+{
+  "protocol": "signed-hand-v3",
+  "actionCapacity": 64,
+  "noir": "1.0.0-beta.18+99bb8b5cf33d7669adbdef096b12d80f30b4c0c9",
+  "barretenberg": "3.0.0-nightly.20251104",
+  "bytecodeSha256": "19e70aab14f8bda4e605fd748419a56cf687a4c6f9b725335db6d18e054116ff",
+  "verificationKeySha256": "9935a88959095748f2270f89128dbccfb3e65936d6ffc54e2fe13b465b73c4c6",
+  "soliditySha256": "b8046ca887803790023075281491781463d4dd9388b725a9dba909d455f270f5",
+  "zeroKnowledge": true,
+  "oracle": "keccak",
+  "productionReady": false
+}

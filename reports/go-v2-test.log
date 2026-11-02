@@ -1,0 +1,11 @@
+	github.com/polygon-zk-poker/server/cmd/engine-vectors		coverage: 0.0% of statements
+	github.com/polygon-zk-poker/server/cmd/server		coverage: 0.0% of statements
+	github.com/polygon-zk-poker/server/cmd/simulate		coverage: 0.0% of statements
+	github.com/polygon-zk-poker/server/cmd/verify		coverage: 0.0% of statements
+	github.com/polygon-zk-poker/server/cmd/verify-signed		coverage: 0.0% of statements
+ok  	github.com/polygon-zk-poker/server/internal/engine	(cached)	coverage: 94.9% of statements
+ok  	github.com/polygon-zk-poker/server/internal/fairness	(cached)	coverage: 88.3% of statements
+ok  	github.com/polygon-zk-poker/server/internal/httpapi	1.725s	coverage: 64.7% of statements
+	github.com/polygon-zk-poker/server/internal/protocol		coverage: 0.0% of statements
+	github.com/polygon-zk-poker/server/internal/store		coverage: 0.0% of statements
+ok  	github.com/polygon-zk-poker/server/internal/table	2.015s	coverage: 71.6% of statements

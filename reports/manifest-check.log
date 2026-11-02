@@ -1,0 +1,12 @@
+{
+  protocol: 'signed-hand-v2',
+  actionCapacity: 64,
+  noir: '1.0.0-beta.18+99bb8b5cf33d7669adbdef096b12d80f30b4c0c9',
+  barretenberg: '3.0.0-nightly.20251104',
+  bytecodeSha256: '520c333c03123ee0bfa6b4c0ecca4806a52bed304e82deead2b02032a042b95f',
+  verificationKeySha256: 'b716438d6cf930657e7cf70d4b12b0804625f013afa4a5122d7a5f6133b8ed7f',
+  soliditySha256: '91640457d56bfdd542938a19acddbca205dbcd318cc4d8d7e1c32af58fe1a430',
+  zeroKnowledge: true,
+  oracle: 'keccak',
+  productionReady: false
+}

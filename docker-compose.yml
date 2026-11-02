@@ -1,0 +1,60 @@
+name: polygon-zk-poker
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: poker
+      POSTGRES_USER: poker
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-development-only}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./infra/postgres/001_init.sql:/docker-entrypoint-initdb.d/001_init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U poker -d poker"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  redis:
+    image: redis:8-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports: ["127.0.0.1:6379:6379"]
+    volumes: ["redis-data:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  server:
+    build:
+      context: .
+      dockerfile: apps/server/Dockerfile
+    ports: ["127.0.0.1:8080:8080"]
+    environment:
+      LISTEN_ADDR: 0.0.0.0:8080
+      DATABASE_URL: postgres://poker:${POSTGRES_PASSWORD:-local-development-only}@postgres:5432/poker?sslmode=disable
+      REDIS_URL: redis://redis:6379/0
+      SERVER_KEY_FILE: /var/lib/poker/server.key
+      DEFAULT_CHAIN_ID: ${DEFAULT_CHAIN_ID:-31337}
+      DEFAULT_REGISTRY_ADDRESS: ${DEFAULT_REGISTRY_ADDRESS:-}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    volumes: ["server-data:/var/lib/poker"]
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports: ["127.0.0.1:5173:80"]
+    depends_on:
+      server: {condition: service_healthy}
+  anvil:
+    image: ghcr.io/foundry-rs/foundry:v1.7.1
+    profiles: ["evm"]
+    entrypoint: ["anvil", "--host", "0.0.0.0"]
+    ports: ["127.0.0.1:8545:8545"]
+volumes:
+  postgres-data:
+  redis-data:
+  server-data:

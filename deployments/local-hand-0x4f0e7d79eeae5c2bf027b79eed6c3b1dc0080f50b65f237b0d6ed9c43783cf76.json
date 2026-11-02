@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "chainId": 31337,
+  "registry": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+  "handId": "0x4f0e7d79eeae5c2bf027b79eed6c3b1dc0080f50b65f237b0d6ed9c43783cf76",
+  "transactionHash": "0x6a1b37bf55322c8730bc89bf9d3abdb82d79924eb575967daa0d771a24d8bb3a",
+  "gas": "5058535",
+  "handVerifiedEvent": true,
+  "tamperedProofAndBalancedOutputRejected": true,
+  "productionReady": false
+}

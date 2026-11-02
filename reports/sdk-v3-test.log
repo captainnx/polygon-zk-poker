@@ -1,0 +1,22 @@
+
+> polygon-zk-poker@0.1.0 test
+> node --experimental-strip-types --test packages/sdk/src/*.test.ts apps/prover/src/*.test.ts
+
+✔ missing build artifacts fail closed; production status stays false (0.591375ms)
+✔ encrypted recovery backup rejects wrong password and ciphertext tampering (156.960834ms)
+✔ automatically generated key verifies its identity certificate without a wallet (30.542042ms)
+✔ even a valid issuer signature cannot assign another player ID to a client key (4.259458ms)
+✔ certificate domain and issuer cannot be replaced (2.604167ms)
+✔ automatic registration rejects a certificate for a different authenticated account (1.880541ms)
+✔ v3 Go/Noir fixture matches every SDK action digest and session signature (38.377042ms)
+✔ v3 observation commitments cannot be substituted under a valid action signature (3.827917ms)
+✔ v3 receipt chain retains byte identity and rejects forks and payload tampering (60.355458ms)
+✔ observation signing rejects padding aliases and fractional card IDs (4.607041ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 348.449042

@@ -1,0 +1,8 @@
+[package]
+name = "poker_crypto"
+type = "lib"
+authors = ["Polygon ZK Poker contributors"]
+compiler_version = ">=1.0.0"
+[dependencies]
+keccak256 = {path = "../vendor/keccak256-0.1.2"}
+shuffle = {path = "../shuffle"}

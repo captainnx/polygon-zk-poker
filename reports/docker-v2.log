@@ -1,0 +1,202 @@
+ Image polygon-zk-poker-web Building 
+ Image polygon-zk-poker-server Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.07kB done
+#1 DONE 0.0s
+
+#2 [server internal] load build definition from Dockerfile
+#2 transferring dockerfile: 640B done
+#2 DONE 0.1s
+
+#3 [web internal] load build definition from Dockerfile
+#3 transferring dockerfile: 619B done
+#3 DONE 0.1s
+
+#4 [server internal] load metadata for docker.io/library/golang:1.25.0-alpine
+#4 DONE 0.1s
+
+#5 [web internal] load metadata for docker.io/library/node:24-alpine
+#5 ...
+
+#6 [server internal] load metadata for docker.io/library/alpine:3.22
+#6 DONE 1.9s
+
+#7 [server internal] load .dockerignore
+#7 transferring context: 174B done
+#7 DONE 0.0s
+
+#8 [server internal] load build context
+#8 DONE 0.0s
+
+#9 [server build 1/8] FROM docker.io/library/golang:1.25.0-alpine@sha256:f18a072054848d87a8077455f0ac8a25886f2397f88bfdd222d6fafbb5bba440
+#9 resolve docker.io/library/golang:1.25.0-alpine@sha256:f18a072054848d87a8077455f0ac8a25886f2397f88bfdd222d6fafbb5bba440 0.1s done
+#9 DONE 0.1s
+
+#10 [server stage-1 1/3] FROM docker.io/library/alpine:3.22@sha256:5291449c3df73caf6ed85e649dec1b9e818b39a5d8c871e97afc13e9cd5e8fa8
+#10 resolve docker.io/library/alpine:3.22@sha256:5291449c3df73caf6ed85e649dec1b9e818b39a5d8c871e97afc13e9cd5e8fa8
+#10 resolve docker.io/library/alpine:3.22@sha256:5291449c3df73caf6ed85e649dec1b9e818b39a5d8c871e97afc13e9cd5e8fa8 0.1s done
+#10 DONE 0.1s
+
+#5 [web internal] load metadata for docker.io/library/node:24-alpine
+#5 DONE 2.1s
+
+#8 [server internal] load build context
+#8 transferring context: 127.52kB 0.0s done
+#8 DONE 0.0s
+
+#11 [server build 2/8] WORKDIR /src
+#11 CACHED
+
+#12 [server build 4/8] COPY apps/server/go.* ./apps/server/
+#12 CACHED
+
+#13 [server build 5/8] WORKDIR /src/apps/server
+#13 CACHED
+
+#14 [server build 3/8] COPY go.work ./
+#14 CACHED
+
+#15 [server build 6/8] RUN go mod download
+#15 CACHED
+
+#16 [server build 7/8] COPY apps/server/ ./
+#16 DONE 0.1s
+
+#17 [server build 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /server ./cmd/server
+#17 ...
+
+#18 [web internal] load metadata for docker.io/library/nginx:1.28-alpine
+#18 DONE 2.4s
+
+#7 [web internal] load .dockerignore
+#7 transferring context: 174B done
+#7 DONE 0.0s
+
+#19 [web stage-1 1/3] FROM docker.io/library/nginx:1.28-alpine@sha256:a8b39bd9cf0f83869a2162827a0caf6137ddf759d50a171451b335cecc87d236
+#19 resolve docker.io/library/nginx:1.28-alpine@sha256:a8b39bd9cf0f83869a2162827a0caf6137ddf759d50a171451b335cecc87d236 0.0s done
+#19 DONE 0.1s
+
+#20 [web build  1/12] FROM docker.io/library/node:24-alpine@sha256:44fce696f38ba8c987c4db89954051000bbd05ffd8d8659ba15ed4a8602e937f
+#20 resolve docker.io/library/node:24-alpine@sha256:44fce696f38ba8c987c4db89954051000bbd05ffd8d8659ba15ed4a8602e937f 0.0s done
+#20 DONE 0.1s
+
+#21 [web internal] load build context
+#21 transferring context: 127.80kB 0.0s done
+#21 DONE 0.0s
+
+#22 [web build  4/12] COPY apps/web/package.json apps/web/package.json
+#22 CACHED
+
+#23 [web build  9/12] COPY tsconfig.json ./
+#23 CACHED
+
+#24 [web build  7/12] COPY packages/sdk/package.json packages/sdk/package.json
+#24 CACHED
+
+#25 [web build  8/12] RUN npm ci --ignore-scripts
+#25 CACHED
+
+#26 [web build  2/12] WORKDIR /src
+#26 CACHED
+
+#27 [web build  3/12] COPY package*.json ./
+#27 CACHED
+
+#28 [web build  6/12] COPY packages/protocol/package.json packages/protocol/package.json
+#28 CACHED
+
+#29 [web build  5/12] COPY apps/prover/package.json apps/prover/package.json
+#29 CACHED
+
+#30 [web build 10/12] COPY apps/web apps/web
+#30 CACHED
+
+#31 [web build 11/12] COPY packages packages
+#31 DONE 0.2s
+
+#17 [server build 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /server ./cmd/server
+#17 ...
+
+#32 [web build 12/12] RUN npm run build --workspace @zkpoker/web
+#32 0.300 
+#32 0.300 > @zkpoker/web@0.1.0 build
+#32 0.300 > vite build
+#32 0.300 
+#32 0.510 vite v7.3.7 building client environment for production...
+#32 0.565 transforming...
+#32 1.668 ✓ 454 modules transformed.
+#32 1.792 rendering chunks...
+#32 1.901 computing gzip size...
+#32 1.913 dist/index.html                   0.37 kB │ gzip:  0.28 kB
+#32 1.913 dist/assets/index-BLf2Bqtl.css    5.19 kB │ gzip:  1.79 kB
+#32 1.913 dist/assets/ccip-tZNcK9Ag.js      4.57 kB │ gzip:  1.97 kB
+#32 1.913 dist/assets/index-D4QqYFOp.js   227.68 kB │ gzip: 72.71 kB
+#32 1.913 ✓ built in 1.38s
+#32 DONE 2.1s
+
+#33 [web stage-1 2/3] COPY apps/web/nginx.conf /etc/nginx/conf.d/default.conf
+#33 CACHED
+
+#34 [web stage-1 3/3] COPY --from=build /src/apps/web/dist /usr/share/nginx/html
+#34 DONE 0.2s
+
+#17 [server build 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /server ./cmd/server
+#17 ...
+
+#35 [web] exporting to image
+#35 exporting layers 0.2s done
+#35 exporting manifest sha256:efccd8df534795980b26bc3ebe752c9e3935486dc1db5d4425040457fd9d1452 0.0s done
+#35 exporting config sha256:0b817faf6059e99f5b38a3ae22439828af9ac9208b0207f019414e14d73817ef 0.0s done
+#35 exporting attestation manifest sha256:891bd43c70a4b8af6d39450d3264713f6efa32dd04ba04671f513c0b84ea15b6 0.0s done
+#35 exporting manifest list sha256:500a68daa98b2c0439a4269dcb5cdb70f790b5392e51b78ed5b4cbfdb4e84af2 0.0s done
+#35 naming to docker.io/library/polygon-zk-poker-web:latest done
+#35 unpacking to docker.io/library/polygon-zk-poker-web:latest 0.0s done
+#35 DONE 0.4s
+
+#17 [server build 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /server ./cmd/server
+#17 ...
+
+#36 [web] resolving provenance for metadata file
+#36 DONE 0.0s
+
+#17 [server build 8/8] RUN CGO_ENABLED=0 go build -trimpath -o /server ./cmd/server
+#17 DONE 10.0s
+
+#37 [server stage-1 2/3] RUN addgroup -S poker && adduser -S -G poker poker && mkdir -p /var/lib/poker && chown poker:poker /var/lib/poker
+#37 CACHED
+
+#38 [server stage-1 3/3] COPY --from=build /server /usr/local/bin/server
+#38 DONE 0.1s
+
+#39 [server] exporting to image
+#39 exporting layers
+#39 exporting layers 0.5s done
+#39 exporting manifest sha256:2eb13e7264a5e2fef0c1b2d09dfad9a4cb11806d89739044d46609f6582163e2
+#39 exporting manifest sha256:2eb13e7264a5e2fef0c1b2d09dfad9a4cb11806d89739044d46609f6582163e2 0.0s done
+#39 exporting config sha256:f8b2f01a07a803fb93f53947db61215b9e019e270996876c147b9519d83649f3 0.0s done
+#39 exporting attestation manifest sha256:63fbaecdcc37bca08353dcfc3bcd6dc891e88c0648acd453a4b9f6f885ecf200 0.0s done
+#39 exporting manifest list sha256:c02b985cc27d7272b4e69273940d0faa0f2e988033a73231559479fa698e3e3d 0.0s done
+#39 naming to docker.io/library/polygon-zk-poker-server:latest done
+#39 unpacking to docker.io/library/polygon-zk-poker-server:latest 0.1s done
+#39 DONE 0.7s
+
+#40 [server] resolving provenance for metadata file
+#40 DONE 0.0s
+ Image polygon-zk-poker-server Built 
+ Image polygon-zk-poker-web Built 
+ Container polygon-zk-poker-postgres-1 Running 
+ Container polygon-zk-poker-redis-1 Running 
+ Container polygon-zk-poker-server-1 Recreate 
+ Container polygon-zk-poker-server-1 Recreated 
+ Container polygon-zk-poker-web-1 Recreate 
+ Container polygon-zk-poker-web-1 Recreated 
+ Container polygon-zk-poker-redis-1 Waiting 
+ Container polygon-zk-poker-postgres-1 Waiting 
+ Container polygon-zk-poker-redis-1 Healthy 
+ Container polygon-zk-poker-postgres-1 Healthy 
+ Container polygon-zk-poker-server-1 Starting 
+ Container polygon-zk-poker-server-1 Started 
+ Container polygon-zk-poker-server-1 Waiting 
+ Container polygon-zk-poker-server-1 Healthy 
+ Container polygon-zk-poker-web-1 Starting 
+ Container polygon-zk-poker-web-1 Started 

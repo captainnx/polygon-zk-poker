@@ -1,0 +1,8 @@
+[package]
+name = "poker_hand_v3"
+type = "bin"
+authors = ["Polygon ZK Poker contributors"]
+compiler_version = ">=1.0.0"
+[dependencies]
+poker_crypto = {path = "../../../circuits/crypto"}
+poker_engine = {path = "../../../circuits/engine"}

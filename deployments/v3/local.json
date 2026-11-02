@@ -1,0 +1,23 @@
+{
+  "network": "local",
+  "chainId": 31337,
+  "verificationKeySha256": "9935a88959095748f2270f89128dbccfb3e65936d6ffc54e2fe13b465b73c4c6",
+  "bytecodeSha256": "19e70aab14f8bda4e605fd748419a56cf687a4c6f9b725335db6d18e054116ff",
+  "addresses": {
+    "HonkVerifier.sol:ZKTranscriptLib": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "HonkVerifier.sol:HonkVerifier": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "PokerHandRegistry.sol:PokerHandRegistry": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0"
+  },
+  "codeHashes": {
+    "HonkVerifier.sol:ZKTranscriptLib": "0x48c3fbe45360266ce3517356ee56eb5d1f3c6ca633ba94cf066dcb5dcd8a381b",
+    "HonkVerifier.sol:HonkVerifier": "0x4a13b4e472e703baa78e08d05416334447e01ae569d5f5a72df21458d4ae9831",
+    "PokerHandRegistry.sol:PokerHandRegistry": "0x31c1221fea2b5582f189301f94c4cde76a7905e5876ce5b3d8951bed1de7761d"
+  },
+  "transactions": [
+    "0x61f6fa5447a7c5141b0b87ee9bc7f38a3f00592bccbe612e1eaf227c8f6b621c",
+    "0xa2eb47672733268b14344e581ca74c52402834dc0e2ca64b76203a3b64aa8ff5",
+    "0x98397e035a1aba44f937b9256127c048569188f5b26760b45b3293a24272ef85"
+  ],
+  "verified": false,
+  "productionReady": false
+}

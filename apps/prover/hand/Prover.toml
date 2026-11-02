@@ -1,0 +1,3 @@
+# Full-hand inputs are generated from a completed signed Audit by:
+# node apps/prover/src/hand.ts check|prove PATH_TO_AUDIT.json
+# See apps/prover/generated/hand/input.json for the complete generated witness input.

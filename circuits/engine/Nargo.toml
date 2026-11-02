@@ -1,0 +1,10 @@
+[package]
+name = "poker_engine"
+type = "lib"
+authors = ["Polygon ZK Poker contributors"]
+compiler_version = ">=1.0.0"
+[dependencies]
+betting = {path = "../betting"}
+showdown = {path = "../showdown"}
+hand = {path = "../hand"}
+crypto = {path = "../crypto"}

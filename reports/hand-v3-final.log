@@ -1,0 +1,26 @@
+/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/.tools/nargo compile --program-dir apps/prover/hand
+node apps/prover/src/cli.ts test-hand fixtures/signed-hand-v3.json
+Executing complete signed-hand witness...
+{
+  "completeWitness": true,
+  "negativeCases": [
+    "actionSignature",
+    "sessionPossessionSignature",
+    "identityIssuerSignature",
+    "identityClaim",
+    "consentSignature",
+    "deck",
+    "illegalBet",
+    "playerSeed",
+    "balancedSidePotOutput"
+  ],
+  "allTamperingRejected": true,
+  "witnessMs": 24643.617625
+}
+node scripts/signed-adversarial.ts --fixture
+Correct session signature; Noir rejects: validSignatureIllegalCheck (check facing bet)
+Correct session signature; Noir rejects: validSignatureShortRaise (short raise must be all-in)
+Correct session signature; Noir rejects: validSignatureWrongHole (invalid signature)
+Correct session signature; Noir rejects: validSignatureWrongBoard (invalid signature)
+go run ./apps/server/cmd/verify-signed reports/streets-signed-hand.json
+{"actions":36,"finalStacks":[989,689,489,989,339,1088,789,989,589],"handId":"0x79a0368b5d1b332ae4c474afbedad0a8b6f42ebf319eefad107661c5dffc2b65","scope":"identity certificates, client key ownership, signed commitments/actions, v3 shuffle and complete engine replay; historical publication time and availability are not proven","verified":true}

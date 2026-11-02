@@ -1,0 +1,15 @@
+fuzz: elapsed: 0s, gathering baseline coverage: 0/134 completed
+fuzz: elapsed: 0s, gathering baseline coverage: 134/134 completed, now fuzzing with 4 workers
+fuzz: elapsed: 3s, execs: 90737 (30239/sec), new interesting: 20 (total: 154)
+fuzz: elapsed: 6s, execs: 229124 (46137/sec), new interesting: 20 (total: 154)
+fuzz: elapsed: 9s, execs: 372420 (47753/sec), new interesting: 24 (total: 158)
+fuzz: elapsed: 12s, execs: 518071 (48548/sec), new interesting: 27 (total: 161)
+fuzz: elapsed: 15s, execs: 652071 (44667/sec), new interesting: 29 (total: 163)
+fuzz: elapsed: 18s, execs: 787196 (45042/sec), new interesting: 29 (total: 163)
+fuzz: elapsed: 21s, execs: 932354 (48384/sec), new interesting: 30 (total: 164)
+fuzz: elapsed: 24s, execs: 1075187 (47618/sec), new interesting: 31 (total: 165)
+fuzz: elapsed: 27s, execs: 1219538 (48110/sec), new interesting: 31 (total: 165)
+fuzz: elapsed: 30s, execs: 1361818 (47439/sec), new interesting: 31 (total: 165)
+fuzz: elapsed: 30s, execs: 1361818 (0/sec), new interesting: 31 (total: 165)
+PASS
+ok  	github.com/polygon-zk-poker/server/internal/engine	30.433s

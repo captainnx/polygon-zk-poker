@@ -1,0 +1,6 @@
+	github.com/polygon-zk-poker/server/cmd/server		coverage: 0.0% of statements
+	github.com/polygon-zk-poker/server/cmd/simulate		coverage: 0.0% of statements
+	github.com/polygon-zk-poker/server/cmd/verify		coverage: 0.0% of statements
+ok  	github.com/polygon-zk-poker/server/internal/engine	12.203s	coverage: 94.9% of statements
+ok  	github.com/polygon-zk-poker/server/internal/fairness	1.428s	coverage: 88.3% of statements
+ok  	github.com/polygon-zk-poker/server/internal/httpapi	1.374s	coverage: 85.1% of statements

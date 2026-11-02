@@ -1,0 +1,1 @@
+packages/sdk/src/v3.test.ts(26,63): error TS2339: Property 'createSessionKey' does not exist on type 'typeof import("/Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/packages/sdk/src/index")'.

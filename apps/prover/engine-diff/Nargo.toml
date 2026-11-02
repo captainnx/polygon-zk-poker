@@ -1,0 +1,8 @@
+[package]
+name = "engine_diff"
+type = "bin"
+authors = ["Polygon ZK Poker contributors"]
+compiler_version = ">=1.0.0"
+[dependencies]
+poker_engine = {path = "../../../circuits/engine"}
+shuffle = {path = "../../../circuits/shuffle"}

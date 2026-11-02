@@ -1,0 +1,13 @@
+noncanonical signature
+exit status 1
+file:///Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/scripts/settle.ts:27
+await new Promise      ((resolve,reject)=>{const p=spawn('go',['run','./apps/server/cmd/verify-signed',resolvePath(auditPath)],{cwd,stdio:'inherit'});p.once('error',reject);p.once('exit',c=>c===0?resolve():reject(new Error('independent audit rejected')));});
+                                                                                                                                                                                                                     ^
+
+Error: independent audit rejected
+    at ChildProcess.<anonymous> (file:///Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/scripts/settle.ts:27:214)
+    at Object.onceWrapper (node:events:631:26)
+    at ChildProcess.emit (node:events:509:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:295:12)
+
+Node.js v24.18.0

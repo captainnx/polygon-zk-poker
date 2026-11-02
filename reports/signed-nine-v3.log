@@ -1,0 +1,11 @@
+{
+  "handId": "0x8c7b8b5ee559f3c946cf2f707be9e2116235065f817e32d78ca453df571308f4",
+  "moves": 9,
+  "totalChips": 6950,
+  "guests": 5,
+  "accounts": 4,
+  "walletRequired": false,
+  "durable": true,
+  "retriesChecked": true,
+  "recoveryChecked": true
+}

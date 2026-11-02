@@ -1,0 +1,35 @@
+{
+  "name": "polygon-zk-poker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/web",
+    "apps/prover",
+    "packages/protocol",
+    "packages/sdk"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @zkpoker/web",
+    "build": "npm run typecheck && npm run build --workspace @zkpoker/web",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test packages/sdk/src/*.test.ts apps/prover/src/*.test.ts",
+    "test:contracts": "cd contracts && forge test",
+    "prover:status": "node apps/prover/src/cli.ts status"
+  },
+  "devDependencies": {
+    "@foundry-rs/anvil": "1.7.1",
+    "@foundry-rs/cast": "1.7.1",
+    "@foundry-rs/forge": "1.7.1",
+    "@types/node": "24.10.1",
+    "solc": "0.8.30",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  }
+}

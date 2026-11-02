@@ -1,0 +1,22 @@
+
+> polygon-zk-poker@0.1.0 build
+> npm run typecheck && npm run build --workspace @zkpoker/web
+
+
+> polygon-zk-poker@0.1.0 typecheck
+> tsc --noEmit
+
+
+> @zkpoker/web@0.1.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 454 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.37 kB │ gzip:  0.28 kB
+dist/assets/index-BLf2Bqtl.css    5.19 kB │ gzip:  1.79 kB
+dist/assets/ccip-4GPerqqC.js      4.57 kB │ gzip:  1.97 kB
+dist/assets/index-Rz7OIJ7Z.js   227.02 kB │ gzip: 72.52 kB
+✓ built in 673ms

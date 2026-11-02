@@ -1,0 +1,18 @@
+{
+  "scope": "signed-hand-v3",
+  "scheme": "UltraHonk",
+  "zeroKnowledge": true,
+  "oracle": "keccak",
+  "backend": "native-cli",
+  "capacity": 64,
+  "players": 9,
+  "actions": 9,
+  "proofBytes": 11712,
+  "proverMs": 115592.451709,
+  "totalMs": 126948.248958,
+  "nodePeakRSSBytes": 1303150592,
+  "processTreePeakRSSBytes": 12328075264,
+  "sampleIntervalMs": 1000,
+  "elapsedMs": 117958,
+  "verified": true
+}

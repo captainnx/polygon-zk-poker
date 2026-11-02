@@ -1,0 +1,21 @@
+cd contracts && /Users/ningx/Documents/ChatGPT/web3/polygon-zk-poker/node_modules/.bin/forge test -vv
+Compiling 4 files with Solc 0.8.30
+Solc 0.8.30 finished in 4.20s
+Compiler run successful!
+
+Ran 12 tests for test/PokerHandRegistry.t.sol:PokerHandRegistryTest
+[PASS] testDomainBindsRegistry() (gas: 1138067)
+[PASS] testFuzzConservation(uint64) (runs: 256, μ: 561345, ~: 561378)
+[PASS] testRecordsNinePlayers() (gas: 557850)
+[PASS] testRejectsAlteredStacksWithSameTotal() (gas: 196304)
+[PASS] testRejectsChipCreation() (gas: 170191)
+[PASS] testRejectsDuplicateHand() (gas: 555856)
+[PASS] testRejectsDuplicatePlayers() (gas: 141124)
+[PASS] testRejectsEOAVerifier() (gas: 36206)
+[PASS] testRejectsGhostChips() (gas: 159605)
+[PASS] testRejectsInvalidProof() (gas: 162554)
+[PASS] testRejectsPlayerSubstitution() (gas: 195122)
+[PASS] testRejectsZeroInitialStack() (gas: 157955)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 33.00ms (35.29ms CPU time)
+
+Ran 1 test suite in 41.65ms (33.00ms CPU time): 12 tests passed, 0 failed, 0 skipped (12 total tests)

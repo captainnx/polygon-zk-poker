@@ -1,0 +1,11 @@
+{
+  "scope": "seven-card-ranking-demo-only",
+  "chainId": 31337,
+  "verifierRuntimeBytes": 24085,
+  "optimizerRuns": 1,
+  "libraryDeployGas": "1356421",
+  "deployGas": "5254072",
+  "verifyGas": "3771981",
+  "verified": true,
+  "tamperedPublicInputRejected": true
+}

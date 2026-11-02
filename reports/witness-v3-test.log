@@ -1,0 +1,17 @@
+Executing complete signed-hand witness...
+{
+  "completeWitness": true,
+  "negativeCases": [
+    "actionSignature",
+    "sessionPossessionSignature",
+    "identityIssuerSignature",
+    "identityClaim",
+    "consentSignature",
+    "deck",
+    "illegalBet",
+    "playerSeed",
+    "balancedSidePotOutput"
+  ],
+  "allTamperingRejected": true,
+  "witnessMs": 26324.019125
+}
